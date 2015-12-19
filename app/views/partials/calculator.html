@@ -1,0 +1,44 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <i class="fa fa-calculator fa-fw"></i><a href="#/calculator">Calculator</a>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <input type="text" class="form-control" disabled ng-model="calcInput">
+      </div>
+    </div>
+    <div class="row">
+      <div class="btn-group btn-group-justified col-xs-12 col-sm-12" role="group">
+        <a class="btn btn-default" ng-click="onDigestBtnClick($event, 7)">7</a>
+        <a class="btn btn-default" ng-click="onDigestBtnClick($event, 8)">8</a>
+        <a class="btn btn-default" ng-click="onDigestBtnClick($event, 9)">9</a>
+        <a class="btn btn-default" ng-click="onActionBtnClick($event, '*')">X</a>
+        <a class="btn btn-default" ng-click="onActionBtnClick($event, '/')">/</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="btn-group btn-group-justified col-xs-12 col-sm-12" role="group">
+        <a class="btn btn-default" ng-click="onDigestBtnClick($event, 4)">4</a>
+        <a class="btn btn-default" ng-click="onDigestBtnClick($event, 5)">5</a>
+        <a class="btn btn-default" ng-click="onDigestBtnClick($event, 6)">6</a>
+        <a class="btn btn-default" ng-click="onActionBtnClick($event, '+')">+</a>
+        <a class="btn btn-default" ng-click="onActionBtnClick($event, '-')">-</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="btn-group btn-group-justified col-xs-12 col-sm-12" role="group">
+        <a class="btn btn-default" ng-click="onDigestBtnClick($event, 1)">1</a>
+        <a class="btn btn-default" ng-click="onDigestBtnClick($event, 2)">2</a>
+        <a class="btn btn-default" ng-click="onDigestBtnClick($event, 3)">3</a>
+        <a class="btn btn-default" ng-click="onDigestBtnClick($event, 0)">0</a>
+        <a class="btn btn-default" ng-click="clearInput($event)">CE</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="btn-group btn-group-justified col-xs-12 col-sm-12" role="group">
+        <a class="btn btn-default" ng-click="countResult($event)">=</a>
+      </div>
+    </div>
+  </div>
+</div>
